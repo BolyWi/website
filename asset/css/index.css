@@ -24,7 +24,19 @@ header{
 }
 
 p{
-    font-style: italic;
     opacity:0.8; 
-    color:brown
+    color:rgb(23, 92, 170);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.parse-quote-style{
+    text-align: right;
+    font-size: medium;
+}
+
+p.parse-style{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: small;
 }
