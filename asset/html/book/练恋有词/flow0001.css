@@ -66,6 +66,12 @@ img.yin{
 	width:25%;
 }
 
+a{
+	font-style: oblique;
+	color: #032e43;
+	text-decoration:underline
+}
+
 /* 目录标题 */
 h1.contents-title {
 	font-weight: normal;
@@ -110,12 +116,13 @@ div.contents-chapter-3 {
 }
 /* 一级标题（蓝色下划线）居右 */
 h1.chapter-one-xu{
-	margin-top:2em;
-	font-weight: bold; 
+	margin-top:1em;
+	font-weight:normal; 
 	text-align: center; 
 	margin:2em 0em 2em auto;
-	color:#0c78c4;
-	
+	color:#05548c;
+	font-size: 20px;
+	text-rendering: geometricPrecision;
 }
 /* 一级标题（蓝字-居中） */
 h1.chapter-one{
@@ -217,7 +224,7 @@ h4.chapter-three{
 
 p.bodytext2 {
 	color:#0c78c4;
-	text-left:left;
+	text-align:left;
 }
 
 /* 部分加粗 */
