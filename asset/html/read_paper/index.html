@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
-            background-color: burlywood;
+            background-color: rgb(245, 210, 164);
         }
 
         h1{
-            padding: 10px 20px;
+            padding: 5px 20px;
+            color: rgb(3, 117, 79);
         }
 
         h2{
-            padding: 10px 30px;
-        }
-
-        li{
-            list-style-type:none;
+            padding: 5px 20px;
+            margin-top: 5px;
+            color: rgb(87, 5, 164);
         }
 
         #paragraph{
             background-color: rgb(15, 147, 165);
             padding: 20px;
-            margin: 10px 40px;
+            margin: 10px 5px;
             border-radius: 10px 10px 10px 10px;
         }
 
@@ -32,7 +31,7 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
             font-weight: bold;
-            padding: 10px 20%;
+            padding: 10px 20px;
             border-radius: 10px 10px 10px 10px;
         }
 
@@ -40,17 +39,20 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 18px;
             background-color: beige;
-            padding: 5px 10px;
-            margin-top: 20px;
+            padding: 5px 5px;
+            margin-top: 10px;
             border-radius: 10px 10px 10px 10px;
         }
 
         #paragraph-question
         {
-            background-color: rgb(57, 133, 199);
-            padding: 5px 10px;
+            background-color: rgb(124, 181, 230);
+            padding: 5px 5px;
             margin-top: 20px;
             border-radius: 10px 10px 10px 10px;
+        }
+        #paragraph-question-item{
+            font-size: 14px;
         }
     </style>
     <title>外刊阅读整理</title>
@@ -78,13 +80,13 @@
             </p>
         </div>
         <div id="paragraph-question">
-            <ul>
-                <li>According to the passage, what is the main reason for the decline of American films' popularity in China?</li>
-                <li>A) The lack of diversity in Hollywood offerings </li>
-                <li>B) Changes in Chinese moviegoers' preferences </li>
-                <li>C) The decrease in production quality of American films </li>
-                <li>D) Limitations on the number of American films screened in China</li>
-            </ul>
+            <div style="padding-left: 10px;">According to the passage, what is the main reason for the decline of American films' popularity in China?</div>
+            <div style="padding: 10px 20px;">
+                <div id="paragraph-question-item">A) The lack of diversity in Hollywood offerings </div>
+                <div id="paragraph-question-item">B) Changes in Chinese moviegoers' preferences </div>
+                <div id="paragraph-question-item">C) The decrease in production quality of American films </div>
+                <div id="paragraph-question-item">D) Limitations on the number of American films screened in China</div>
+            </div>
         </div>
     </div>
 </body>
