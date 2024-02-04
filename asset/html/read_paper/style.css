@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(245, 210, 164);
+}
+
+h1{
+    padding: 5px 20px;
+    color: rgb(3, 117, 79);
+}
+
+a{
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    color: rgb(87, 5, 164);
+}
+
+#title{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    color: rgb(87, 5, 164);
+}
+
+#paragraph{
+    background-color: rgb(15, 147, 165);
+    padding: 20px;
+    margin: 10px 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#paragraph-title{
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#paragraph-content{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    background-color: beige;
+    padding: 5px 5px;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#paragraph-question
+{
+    background-color: rgb(124, 181, 230);
+    padding: 5px 5px;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+#paragraph-question-item{
+    font-size: 14px;
+}
