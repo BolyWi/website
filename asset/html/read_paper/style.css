@@ -14,21 +14,21 @@ a{
     color: rgb(87, 5, 164);
 }
 
-#title{
+.title{
     font-size: 25px;
     padding: 5px 20px;
     margin-top: 5px;
     color: rgb(87, 5, 164);
 }
 
-#paragraph{
+.paragraph{
     background-color: rgb(15, 147, 165);
     padding: 20px;
     margin: 10px 5px;
     border-radius: 10px 10px 10px 10px;
 }
 
-#paragraph-title{
+.paragraph-title{
     background-color: aquamarine;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -37,7 +37,7 @@ a{
     border-radius: 10px 10px 10px 10px;
 }
 
-#paragraph-content{
+.paragraph-content{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     background-color: beige;
@@ -46,13 +46,25 @@ a{
     border-radius: 10px 10px 10px 10px;
 }
 
-#paragraph-question
+.paragraph-question
 {
     background-color: rgb(124, 181, 230);
     padding: 5px 5px;
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
 }
-#paragraph-question-item{
-    font-size: 14px;
+
+.paragraph-question-title{
+    padding-left: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.paragraph-question-answer{
+    padding: 10px 20px;
+}
+
+.paragraph-question-answer-item{
+    padding: 5px 5px;
+    font-size: 16px;
 }
