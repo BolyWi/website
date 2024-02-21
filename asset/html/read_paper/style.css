@@ -1,38 +1,47 @@
-body{
+body {
     background-color: rgb(245, 210, 164);
 }
 
-h1{
+h1 {
     padding: 5px 20px;
     color: rgb(3, 117, 79);
 }
 
-a{
-    font-size: 20px;
-    padding: 5px 20px;
-    margin-top: 5px;
-    color: rgb(87, 5, 164);
-}
-
-.paper-month-item{
+.paper-month-item {
     padding: 10px 40px;
+    background-color: rgb(1, 60, 109);
+    margin: 10px 5px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 2em
 }
 
-.title{
+a {
+    font-size: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgb(8, 139, 96);
+}
+
+
+.title {
     font-size: 25px;
     padding: 5px 20px;
     margin-top: 5px;
     color: rgb(87, 5, 164);
 }
 
-.paragraph{
+.paragraph {
     background-color: rgb(15, 147, 165);
     padding: 20px;
     margin: 10px 5px;
     border-radius: 10px 10px 10px 10px;
 }
 
-.paragraph-title{
+.paragraph-title {
     background-color: aquamarine;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -41,8 +50,8 @@ a{
     border-radius: 10px 10px 10px 10px;
 }
 
-.paragraph-content{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.paragraph-content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     background-color: beige;
     padding: 5px 5px;
@@ -50,25 +59,24 @@ a{
     border-radius: 10px 10px 10px 10px;
 }
 
-.paragraph-question
-{
+.paragraph-question {
     background-color: rgb(124, 181, 230);
     padding: 5px 5px;
     margin-top: 20px;
     border-radius: 10px 10px 10px 10px;
 }
 
-.paragraph-question-title{
+.paragraph-question-title {
     padding-left: 10px;
     font-size: 18px;
     font-style: italic;
 }
 
-.paragraph-question-answer{
+.paragraph-question-answer {
     padding: 10px 20px;
 }
 
-.paragraph-question-answer-item{
+.paragraph-question-answer-item {
     padding: 5px 5px;
     font-size: 16px;
 }
