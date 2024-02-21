@@ -2,24 +2,60 @@ body{
     background-color: antiquewhite;
 }
 
+#datetime{
+    font-size: 18px;
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 10px 10px 10px 10px;
+    text-align: right;
+    width: fit-content;
+    height: fit-content;
+    float: right;
+}
+
+#web-description, #personal-motto{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(111, 148, 7);
+    background-color: aquamarine;
+    width: fit-content;
+    height: fit-content;
+}
+
 h1{
     text-align: center;
     text-shadow: 20px;
     font-family: cursive;
     font-size: 40px;
     color: cadetblue;
+    border-radius: 5px 5px 5px 5px;
 }
 
 h2{
     text-align: center;
     color: rgb(5, 113, 175);
+    background-color: aquamarine;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px 5px 5px 5px;
 }
 
 a{
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
-    color: rgb(4, 43, 43);
+    background-color: rgb(5, 151, 151);
+    color: rgb(55, 12, 175);
+    border-radius: 5px 5px 5px 5px;
 }
+
+table{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    background-color: aquamarine;
+    color: blue;
+}
+
 header{
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
