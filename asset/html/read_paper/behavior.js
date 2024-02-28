@@ -26,7 +26,11 @@ function genterateContentList() {
     for (var i = 0; i < pTitle.length; i++){
         let link = document.createElement('a')
         let list = document.createElement('li');
-        list.id = "list-content" + i;
+        list.id = "list-item" + i;
+        // 设置锚点，点击目录跳转到相应文章
+        pTitle[i].id = "para" + i;
+        link.href = "#" + pTitle[i].id;
+
         link.innerText = pTitle[i].innerText;
         list.appendChild(link);
         contentTitle.appendChild(list);
