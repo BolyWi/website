@@ -1,0 +1,17 @@
+h1{
+    color: rgb(12, 107, 241);
+    font-family: "楷体","宋体",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: fit-content;
+    height: fit-content;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+p{
+    color: rgb(7, 96, 66);
+    font-family: "宋体",'Lucida Sans', 'Lucida Sans Regular';
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    background-color: blanchedalmond;
+}
