@@ -10,7 +10,7 @@ body{
 }
 
 #datetime{
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(245, 255, 159);
     color: rgb(109, 109, 236);
@@ -18,8 +18,7 @@ body{
     padding: 5px;
     width: fit-content;
     height: fit-content;
-    margin:auto;
-    margin-right: 10px;
+    margin:auto auto 10px 10px;
 }
 
 #web-description, #personal-motto{
