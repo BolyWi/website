@@ -9,16 +9,36 @@ body{
     border-radius: 10px 10px 10px 10px;
 }
 
+#top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(5, 134, 219);
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 35px;
+}
+
 #datetime{
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(245, 255, 159);
-    color: rgb(109, 109, 236);
+    color: rgb(24, 24, 141);
     border-radius: 10px 10px 10px 10px;
     padding: 5px;
     width: fit-content;
     height: fit-content;
-    margin:auto auto 10px 10px;
+    margin:auto auto 10px auto;
 }
 
 #web-description, #personal-motto{
