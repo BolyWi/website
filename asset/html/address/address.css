@@ -1,30 +1,34 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-}
-
-body {
-    background-color: #2d4b05;
-    background-size: cover;
+body{
+    background-color: #35ca9b;
 }
 
 h1 {
-    color: #12b682;
+    color: #eeeb4c;
     font-family: Georgia, serif;
     font-style: italic;
     font-weight: bold;
     text-decoration: none;
     font-size: 20pt;
-    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+
 }
 
 p {
-    color: #cfffc3;
+    color: #2aa00d;
     font-family: Consolas, monospace;
     font-style: italic;
     font-weight: normal;
     text-decoration: none;
     font-size: 16pt;
     margin: 8pt;
+    padding: 5px;
+}
+
+#article-content{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    background-color: #045c40;
+    border-radius: 10px 10px 10px 10px;
 }
