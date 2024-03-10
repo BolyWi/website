@@ -1,0 +1,35 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    font-size: 18pt;
+    text-align: center;
+    font-style: oblique;
+}
+
+sub{
+    font-size: 8pt;
+}
+.title {
+    color: rgb(22, 146, 146);
+    font-size: 20pt;
+    text-align: left;
+    margin-left: 10pt;
+}
+
+.content {
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: rgba(98, 39, 165, 0.877);
+    margin-left: 20pt;
+}
+
+ul{
+    font-size: 20px;
+    background-color: antiquewhite;
+    width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
