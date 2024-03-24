@@ -17,6 +17,3 @@
 
 ## 7. Anything
 
-
-
-- This is special commit test!
