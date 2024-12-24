@@ -1,0 +1,115 @@
+:root {
+    --body-bg: #000000;
+    /* 网页背景颜色 */
+    --font-size: 18vw;
+    /* 时钟字体大小 */
+    --center-border: 0.3vw solid #000;
+    /* 翻页中间的边框色 */
+    --col-width: 13vw;
+    /* 6个时间块的宽度 */
+    --col-height: 18vw;
+    /* 时钟高度 */
+    --col-color: #ffffff;
+    /* 时钟字体颜色 */
+    --col-bg: #202020;
+    /* 时钟背景色 */
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+.time {
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1vw;
+    font-family: sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.col {
+    width: var(--col-width);
+    height: var(--col-height);
+    perspective: var(--col-height);
+}
+
+.col:nth-child(3),
+.col:nth-child(5) {
+    margin-left: 4vw;
+}
+
+.curr,
+.next {
+    position: relative;
+    width: var(--col-width);
+    height: calc(var(--col-height) / 2);
+    font-size: var(--font-size);
+    background: var(--col-bg);
+    border-radius: 1vw;
+    color: var(--col-color);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.flip .curr::before,
+.flip .next::before,
+.col>.curr::before,
+.col>.next::before {
+    position: absolute;
+    content: attr(data-t);
+    line-height: var(--col-height);
+    text-align: center;
+    height: var(--col-height);
+    left: 0;
+    right: 0;
+}
+
+.flip .curr::before,
+.col>.next::before {
+    top: 0;
+}
+
+.flip .next::before,
+.col>.curr::before {
+    bottom: 0;
+}
+
+.flip .curr,
+.col>.next {
+    border-bottom: var(--center-border);
+}
+
+.flip .next,
+.col>.curr {
+    border-top: var(--center-border);
+}
+
+.flip .next {
+    transform: rotateX(-180deg);
+    backface-visibility: hidden;
+}
+
+.flip .curr {
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+}
+
+.flip {
+    position: absolute;
+    width: var(--col-width);
+    height: var(--col-height);
+    z-index: 1;
+    transform-style: preserve-3d;
+    transition: transform 0s;
+    transform: rotateX(0);
+}
+
+.flip.active {
+    transition: all 0.5s ease-in-out;
+    transform: rotateX(-180deg);
+}
