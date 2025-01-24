@@ -15,3 +15,8 @@ p{
     height: fit-content;
     background-color: blanchedalmond;
 }
+
+li{
+    font-size: 18px;
+    color: blueviolet;
+}
