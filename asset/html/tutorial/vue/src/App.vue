@@ -3,22 +3,28 @@ import { reactive } from 'vue';
 
 const date_time = reactive({ time_label: 0 });
 
-function numberPad(Number = num) {
-  return toString(num).padStart(2, '0');
-}
+class DateTime {
+  constructor() {
+    this.now = new Date();
+    this.year = String(this.now.getFullYear()).padStart(4, '0');
+    this.month = String(this.now.getMonth() + 1).padStart(2, '0');
+    this.day = String(this.now.getDate()).padStart(2, '0');
+    this.week = String(this.now.getDay()).padStart(2, '0');
+    this.hour = String(this.now.getHours()).padStart(2, '0');
+    this.minute = String(this.now.getMinutes()).padStart(2, '0');
+    this.second = String(this.now.getSeconds()).padStart(2, '0');
+  }
 
-function getSysTime() {
-  let now = new Date();
-  let year = now.getFullYear();
-  let month = now.getMonth() + 1;
-  let date = now.getDate();
-  let now_date = numberPad(year) + '年' + numberPad(month) + '月' + numberPad(date) + '日 ';
-  let now_time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
-  return now_date + now_time;
-}
+  getSysTime() {
+    let now_date = this.year + '年' + this.month + '月' + this.day + '日 ';
+    let now_time = this.hour + ':' + this.minute + ':' + this.second;
+    return now_date + now_time;
+  }
+};
 
 setInterval(() => {
-  date_time.time_label = getSysTime();
+  let time = new DateTime();
+  date_time.time_label = time.getSysTime();
 }, 1000);
 
 </script>
@@ -39,5 +45,6 @@ h1 {
   color: rgb(7, 107, 74);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: italic;
+  font-size: 20px;
 }
 </style>
