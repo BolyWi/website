@@ -22,16 +22,19 @@ class DateTime {
   }
 };
 
-setInterval(() => {
-  let time = new DateTime();
-  date_time.time_label = time.getSysTime();
-}, 1000);
+window.onload = function () {
+  setInterval(() => {
+    let time = new DateTime();
+    date_time.time_label = time.getSysTime();
+  }, 1000);
+};
 
 </script>
 
 <template>
   <h1>Hello Vue</h1>
   <div id="time-label">{{ date_time.time_label }}</div>
+  <div class="content"></div>
 </template>
 
 <style scoped>
@@ -39,6 +42,13 @@ h1 {
   color: rgb(207, 121, 15);
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.canvas-style {
+  width: 400px;
+  height: 400px;
+  background-color: antiquewhite;
+  fill: black;
 }
 
 #time-label {
