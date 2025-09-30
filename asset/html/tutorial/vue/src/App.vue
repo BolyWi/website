@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from 'vue';
-
+import Swiper from './Swiper.vue';
 const date_time = reactive({ time_label: 0 });
 
 class DateTime {
@@ -33,8 +33,9 @@ window.onload = function () {
 
 <template>
   <h1>Hello Vue</h1>
-  <div id="time-label">{{ date_time.time_label }}</div>
-  <div class="content"></div>
+    <div id="time-label">{{ date_time.time_label }}</div>
+    <div class="content"></div>
+    <Swiper></Swiper>
 </template>
 
 <style scoped>
